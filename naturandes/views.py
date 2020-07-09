@@ -4,4 +4,5 @@ from django.shortcuts import render, HttpResponse
 
 
 def naturandes(request):
-    return HttpResponse("Hello Peru.")
+    """View that display the naturandes page"""
+    return render(request, "naturandes.html")
