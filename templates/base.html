@@ -1,4 +1,4 @@
-{% load static from staticfiles %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -31,7 +31,7 @@
                                 {% if user.is_authenticated %}
                                 Welcome {{ user }}!
                                 {% else %}
-                                <a href="{% url 'login' %}" class="login-message">Please log in for a better experience!</a>
+                                {# <a href="{% url 'login' %}" class="login-message">Please log in for a better experience!</a> #}
                                 {% endif %}
                             </em></strong
                         ></p>
