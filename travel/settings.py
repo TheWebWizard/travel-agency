@@ -34,6 +34,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'naturandes',
+    'customers',
     'django_forms_bootstrap',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -93,7 +94,7 @@ ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
-LOGIN_REDIRECT_URL = '/naturandes/'
+LOGIN_REDIRECT_URL = '/customers/'
 
 WSGI_APPLICATION = 'travel.wsgi.application'
 
