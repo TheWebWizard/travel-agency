@@ -22,7 +22,7 @@ urlpatterns = [
     path('naturandes/', include('naturandes.urls')),
     path('', include('customers.urls')),
     path('admin/', admin.site.urls),
-    path('accounts/', include('allauth.urls')),
+    path('customers/', include('allauth.urls')),
 ]
 
 

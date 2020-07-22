@@ -93,8 +93,11 @@ ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
-LOGIN_URL = '/accounts/login/'
+LOGIN_URL = '/customers/login/'
+ACCOUNT_EMAIL_CONFIRMATION_ANONYMOUS_REDIRECT_URL = '/customers/login/'
+# SIGNUP_URL = '/accounts/signup/'
 LOGIN_REDIRECT_URL = '/customers/'
+
 
 WSGI_APPLICATION = 'travel.wsgi.application'
 

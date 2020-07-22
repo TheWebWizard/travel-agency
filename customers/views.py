@@ -34,3 +34,11 @@ def logout(request):
     context = {}
 
     return render(request, template, context)
+
+def signup(request):
+    """Link to logout page"""
+
+    template = 'allauth/account/signup.html'
+    context = {}
+
+    return render(request, template, context)
